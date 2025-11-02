@@ -5,17 +5,16 @@ namespace Calculator
         public static void Standard(int input)
         {
             Console.Clear();
-            //
             Console.WriteLine("Enter the first value: ");
             var inputString = Console.ReadLine();
             double x;
+
             if (!double.TryParse(inputString, out x)) { Menu.Error(); }
-            //
             Console.WriteLine("Enter the second value: ");
             inputString = Console.ReadLine();
             double y;
+
             if (!double.TryParse(inputString, out y)) { Menu.Error(); }
-            //
             var result = 0d;
 
             switch (input)
